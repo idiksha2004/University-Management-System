@@ -39,7 +39,8 @@ Follow these simple steps to set up the project on your local machine:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/University-Management-System.git
-2. Setup the Environment
+
+### 2. Setup the Environment
 Install XAMPP or any LAMP stack.
 
 Move the project folder to htdocs (for XAMPP).

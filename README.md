@@ -36,10 +36,6 @@ A clean, efficient, and responsive **University Management System** built with *
 
 Follow these simple steps to set up the project on your local machine:
 
-# 🎓 University Management System
-
-A clean and modular **University Management System** developed using **PHP, MySQL, HTML, CSS, and JavaScript**. It allows administrators and faculty to manage students, test results, and roles within a university setting.
-
 ---
 
 ### 1. Clone the Repository

@@ -29,10 +29,8 @@ A clean, efficient, and responsive **University Management System** built with *
 
 ## 📷 Screenshots
 
-> *📌 UI Previews coming soon...*  
-> (You can upload screenshots in this section showing login, dashboard, result entry, etc.)
+![image](https://github.com/user-attachments/assets/c211e2d4-c3a6-454b-b5fa-78a720a6d477)
 
----
 
 ## 🚀 Getting Started
 

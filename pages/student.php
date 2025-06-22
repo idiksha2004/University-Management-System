@@ -1,19 +1,17 @@
-
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-// Test include manually:
-$file = realpath("../backend/auth/check_student.php");
-echo "<pre>Resolved path: $file</pre>";
-
-include($file);
-?>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include("../backend/auth/check_student.php"); // ✅ Make sure this file exists!
 ?>
+<?php
+session_start();
+if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] !== 'student') {
+    header("Location: ../login.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +22,7 @@ include("../backend/auth/check_student.php"); // ✅ Make sure this file exists!
 <body class="bg-gradient-to-br from-blue-50 to-purple-100 p-6 min-h-screen">
 
   <h1 class="text-3xl font-bold text-center text-blue-800 mb-6">🎓 Student Dashboard</h1>
+  <a href="../backend/auth/logout.php" style="color: red; float: right;">Logout</a>
 
   <!-- Profile Info -->
   <div class="bg-white p-6 rounded-lg shadow mb-8 max-w-xl mx-auto animate-fade-in">

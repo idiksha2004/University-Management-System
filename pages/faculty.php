@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] !== 'student') {
+    header("Location: ../login.html");
+    exit();
+}
+?>
 <?php include("../backend/auth/check_faculty.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +38,8 @@
       <button onclick="toggleDarkMode()" class="bg-white text-blue-800 px-4 py-1 rounded hover:bg-gray-100">
         🌗 Toggle Theme
       </button>
+      <a href="../backend/auth/logout.php" style="color: red; float: right;">Logout</a>
+
     </div>
   </header>
 

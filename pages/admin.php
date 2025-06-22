@@ -10,6 +10,7 @@
 <body class="bg-gray-100 min-h-screen p-6">
 
   <h1 class="text-3xl font-bold text-center mb-8 text-blue-800">Admin Dashboard</h1>
+  <a href="../backend/auth/logout.php" style="color: red; float: right;">Logout</a>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
     <div class="bg-white shadow-lg rounded-xl p-6 text-center">
